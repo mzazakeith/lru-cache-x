@@ -1,4 +1,4 @@
-# FeatureRich LRU Cache
+# lru-cache-x
 
 A lightweight, zero-dependency, and feature-rich Least Recently Used (LRU) cache implementation in TypeScript. Designed for performance, flexibility, and ease of use in both Node.js and browser environments.
 
