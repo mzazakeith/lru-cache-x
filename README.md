@@ -30,9 +30,8 @@ This LRU cache stands out with its comprehensive feature set, offering capabilit
 This module is self-contained in `index.ts`. You can integrate it into your project by copying the file or importing it directly if your setup supports it.
 
 ```bash
-# If you publish it as a package, example:
-# npm install lru-cache-x
-# yarn add lru-cache-x
+ npm install lru-cache-x
+ yarn add lru-cache-x
 ```
 
 ## Basic Usage
