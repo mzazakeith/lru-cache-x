@@ -151,8 +151,8 @@ class LruCache<Key extends PropertyKey, Value = unknown> {
       let expiresAt: number | null;
       if (itemTtlMs === null) { // Explicitly no TTL for this item
           expiresAt = null;
-      } else if (typeof itemTtlMs === 'number' && itemTtlMs > 0) { // Specific TTL for this item
-          if (!Number.isInteger(itemTtlMs)) {
+      } else if (typeof itemTtlMs === 'number') { // Specific TTL for this item
+          if (!Number.isInteger(itemTtlMs) || itemTtlMs <= 0) {
             throw new Error('Item TTL must be a positive integer if specified');
           }
           expiresAt = Date.now() + itemTtlMs;
